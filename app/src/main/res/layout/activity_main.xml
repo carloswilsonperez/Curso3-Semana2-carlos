@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/general_spacing"
+        android:layout_marginRight="@dimen/general_spacing"
+        android:layout_marginTop="@dimen/general_spacing"
+        android:clipToPadding="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="@dimen/general_spacing"
+        android:layout_marginEnd="@dimen/general_spacing">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/general_spacing"
+            android:paddingLeft="@dimen/general_spacing"
+            android:paddingRight="@dimen/general_spacing"
+            android:paddingTop="@dimen/general_spacing">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutNombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/general_spacing"
+                android:layout_marginLeft="@dimen/general_spacing"
+                android:layout_marginRight="@dimen/general_spacing"
+                android:layout_marginStart="@dimen/general_spacing"
+                android:layout_marginTop="@dimen/general_spacing"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <EditText
+                    android:id="@+id/editTextNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_nombre"
+                    android:inputType="textPersonName" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textViewFecha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="@dimen/general_spacing"
+                android:layout_marginLeft="@dimen/general_spacing"
+                android:layout_marginRight="@dimen/general_spacing"
+                android:layout_marginStart="@dimen/general_spacing"
+                android:paddingLeft="5dp"
+                android:text="@string/texto_fecha"
+                android:textSize="20dp"
+                android:visibility="visible"
+                tools:ignore="RtlHardcoded,RtlSymmetry,SpUsage" />
+
+            <DatePicker
+                android:id="@+id/dpFecha"
+                style="@style/AlertDialog.AppCompat.Light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/general_spacing"
+                android:layout_marginLeft="@dimen/general_spacing"
+                android:layout_marginRight="@dimen/general_spacing"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:scrollbars="vertical"
+                android:spinnersShown="true"
+                android:visibility="visible"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/general_spacing"
+                android:layout_marginLeft="@dimen/general_spacing"
+                android:layout_marginRight="@dimen/general_spacing"
+                android:layout_marginStart="@dimen/general_spacing"
+                android:layout_marginTop="@dimen/general_spacing"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/datePicker">
+
+                <EditText
+                    android:id="@+id/editTextTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_telefono"
+                    android:inputType="phone" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/general_spacing"
+                android:layout_marginLeft="@dimen/general_spacing"
+                android:layout_marginRight="@dimen/general_spacing"
+                android:layout_marginStart="@dimen/general_spacing"
+                android:layout_marginTop="@dimen/general_spacing"
+                android:layout_weight="1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutTelefono"
+                tools:ignore="InefficientWeight">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayoutDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/general_spacing"
+                android:layout_marginLeft="@dimen/general_spacing"
+                android:layout_marginRight="@dimen/general_spacing"
+                android:layout_marginStart="@dimen/general_spacing"
+                android:layout_marginTop="@dimen/general_spacing"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEmail">
+
+                <EditText
+                    android:id="@+id/editTextDescripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_descripcion"
+                    android:inputType="text" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_height"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/btn_siguiente"
+                android:textSize="@dimen/btn_text_size"
+                android:theme="@style/botonRaised"
+                tools:ignore="SpUsage" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

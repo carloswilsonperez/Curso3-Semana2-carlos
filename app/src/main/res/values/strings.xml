@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Tarea 2</string>
+    <string name="hint_nombre">Nombre completo</string>
+    <string name="hint_telefono">Teléfono</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_descripcion">Descripción</string>
+    <string name="btn_siguiente">Siguiente</string>
+    <string name="btn_editar_datos">Editar Datos</string>
+    <string name="titulo_activity2">Confirmar Datos</string>
+    <string name="texto_fecha">Fecha de nacimiento: </string>
+    <string name="texto_telefono">Tel.: </string>
+    <string name="texto_email">Email: </string>
+    <string name="texto_descripcion">Descripción: </string>
+    <string name="p_nombre">nombre</string>
+    <string name="p_telefono">telefono</string>
+    <string name="p_email">email</string>
+    <string name="p_descripcion">descripcion</string>
+    <string name="p_fecha">fecha</string>
+</resources>
