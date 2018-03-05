@@ -16,7 +16,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Vistas del MainActivity
+    // MainActivity views
     private Button btnSiguiente;
     private DatePicker dpFecha;
     private EditText editTextNombre;
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Instancio todos los elementos del MainActivity
+        // Get a reference for Views in MainActivity
         btnSiguiente = (Button) findViewById(R.id.btnSiguiente);
         dpFecha= (DatePicker) findViewById(R.id.dpFecha);
         editTextNombre = (EditText) findViewById(R.id.editTextNombre);
@@ -110,9 +110,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-    public void goToNextActivity(View v) {
-        Toast.makeText(this, "mmm", Toast.LENGTH_SHORT).show();
-    }
-
 }

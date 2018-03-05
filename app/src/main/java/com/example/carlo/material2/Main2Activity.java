@@ -53,9 +53,9 @@ public class Main2Activity extends AppCompatActivity {
         // Set the current activity view values
         tvNombre.setText(nombre);
         tvTelefono.setText(getResources().getString(R.string.texto_telefono) + " " + telefono);
-        tvEmail.setText(getResources().getString(R.string.texto_email)+ " " + email);
-        tvDescripcion.setText(getResources().getString(R.string.texto_descripcion)+ " " + descripcion);
-        tvFecha.setText(getResources().getString(R.string.texto_fecha)+" "+fecha.get(0)+"/"+(fecha.get(1)+1)+"/"+fecha.get(2));
+        tvEmail.setText(getResources().getString(R.string.texto_email) + " " + email);
+        tvDescripcion.setText(getResources().getString(R.string.texto_descripcion) + " " + descripcion);
+        tvFecha.setText(getResources().getString(R.string.texto_fecha) + " " + fecha.get(0) + "/" + (fecha.get(1) + 1) + "/" + fecha.get(2));
 
         // When pressing the "Editar Datos" button
         btnEditarDatos.setOnClickListener(new View.OnClickListener() {
