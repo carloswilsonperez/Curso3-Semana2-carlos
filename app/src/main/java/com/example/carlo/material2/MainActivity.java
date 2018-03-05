@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
 
             // Destroy current Activity
-            finish();
+            //finish();
             }
         });
     }
